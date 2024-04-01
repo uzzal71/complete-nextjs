@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Settings Page",
+  description: "This is our settings page",
+};
+
 export default function Settings() {
   return (
     <div className="p-4">
