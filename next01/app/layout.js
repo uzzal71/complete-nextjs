@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
               <CustomLink path="/dashboard/analytics">Analytics</CustomLink>
             </li>
             <li>
-              <CustomLink path="/dashboard/settings">Settings</CustomLink>
+              <CustomLink prefetch={false} path="/dashboard/settings">
+                Settings
+              </CustomLink>
             </li>
           </ul>
         </nav>
