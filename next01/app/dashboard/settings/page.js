@@ -1,3 +1,5 @@
+import Button from "@/app/components/Button";
+
 export const metadata = {
   title: "Settings Page",
   description: "This is our settings page",
@@ -13,6 +15,8 @@ export default function Settings() {
         dignissimos aperiam quo, sapiente quos eveniet vero, quibusdam
         praesentium?
       </p>
+
+      <Button>Go to Analytics Page</Button>
     </div>
   );
 }
