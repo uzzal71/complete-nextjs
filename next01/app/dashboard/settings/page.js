@@ -1,4 +1,5 @@
 import Button from "@/app/components/Button";
+import SortProducts from "@/app/components/SortProducts";
 
 export const metadata = {
   title: "Settings Page",
@@ -17,6 +18,9 @@ export default function Settings() {
       </p>
 
       <Button>Go to Analytics Page</Button>
+      <br />
+      <br />
+      <SortProducts />
     </div>
   );
 }

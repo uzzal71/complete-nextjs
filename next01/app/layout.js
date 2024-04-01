@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
         <nav className="p-4 border-b border-gray-400">
           <ul className="flex gap-5">
