@@ -1,11 +1,7 @@
 import blogs from "@/app/data/blogs";
 
 export function generateStaticParams() {
-  return blogs.map((blog) => ({
-    params: {
-      id: blog.id,
-    },
-  }));
+  return blogs.map((blog) => ({ id: blog.id }));
 }
 
 export default function SingleBlog({ params }) {
