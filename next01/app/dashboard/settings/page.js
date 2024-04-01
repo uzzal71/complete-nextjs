@@ -1,5 +1,6 @@
 import Button from "@/app/components/Button";
 import SortProducts from "@/app/components/SortProducts";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Settings Page",
@@ -20,7 +21,10 @@ export default function Settings() {
       <Button>Go to Analytics Page</Button>
       <br />
       <br />
-      <SortProducts />
+
+      <Suspense>
+        <SortProducts />
+      </Suspense>
     </div>
   );
 }
