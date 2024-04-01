@@ -6,7 +6,7 @@ export default function Button({ children }) {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/dashboard/analytics");
+    router.push("/analytics");
   };
 
   return (

@@ -4,8 +4,6 @@ export const metadata = {
 };
 
 export default function Analytics() {
-  throw new Error("Error occurred Analytics page");
-
   return (
     <div className="p-4">
       <h1 className="text-2xl">Analytics page</h1>
