@@ -1,7 +1,7 @@
-export default function Settings() {
+export default function Analytics() {
   return (
     <div className="p-4">
-      <h1 className="text-2xl">Settings page</h1>
+      <h1 className="text-2xl">Analytics page</h1>
       <p className="mt-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam
         numquam quo possimus fugiat soluta? Qui sit, beatae quod iusto esse
