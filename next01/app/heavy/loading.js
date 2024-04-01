@@ -1,3 +1,3 @@
-export default function HeavyLoading() {
+export default function Loading() {
   return <div className="text-xl">Loading...</div>;
 }
