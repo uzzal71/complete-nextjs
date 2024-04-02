@@ -19,7 +19,6 @@ export function getDocuments() {
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     const matterResult = matter(fileContents);
-    console.log(matterResult);
 
     return {
       id,
