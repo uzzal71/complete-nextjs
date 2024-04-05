@@ -1,5 +1,19 @@
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout({
+  children,
+  assignments,
+  quiz,
+  notifications,
+}) {
+  const isLoggedIn = false;
+
   return (
-    <div className="grid gap-6 grid-cols-2 grid-rows-2 p-8">{children}</div>
+    <>
+      {children}
+      <div className="grid gap-6 grid-cols-2 grid-rows-2 p-8">
+        {assignments}
+        {isLoggedIn && notifications}
+        {quiz}
+      </div>
+    </>
   );
 }
