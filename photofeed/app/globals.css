@@ -42,3 +42,7 @@
 .btn-download:hover {
   background-color: #45a049; /* Darker green color on hover */
 }
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
