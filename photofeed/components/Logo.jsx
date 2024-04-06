@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
+import Image from "next/image"
 
 const Logo = () => {
   return (
@@ -12,7 +12,7 @@ const Logo = () => {
         width={165}
       />
     </Link>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo

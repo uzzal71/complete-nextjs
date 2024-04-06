@@ -1,8 +1,11 @@
+
 import { getDictionary } from "@/app/[lang]/disctionaries";
 
 import Image from "next/image";
 
 const PhotoDetails = async ({ id, lang }) => {
+
+
   const response = await fetch(`${process.env.BASE_API_URL}/photos/${id}`);
   const photo = await response.json();
 
@@ -21,9 +24,11 @@ const PhotoDetails = async ({ id, lang }) => {
       </div>
 
       <div className="p-6 border rounded-xl col-span-12 lg:col-span-4">
-        <h2 className="text-lg lg:text-2xl font-bold mb-2">{photo.title}</h2>
+        <h2 className="text-lg lg:text-2xl font-bold mb-2">
+          {photo.title}
+        </h2>
         <div className="text-xs lg:text-sm text-black/60 mb-6">
-          {photo.tags.map((tag) => `#${tag} `)}
+          {photo.tags.map(tag => `#${tag} `)}
         </div>
         <div className="space-y-2.5 text-black/80 text-xs lg:text-sm">
           <div className="flex justify-between">
@@ -62,7 +67,9 @@ const PhotoDetails = async ({ id, lang }) => {
               {dictionary.follow}
             </button>
           </div>
-          <p className="text-xs lg:text-sm text-black/60">{photo.author.bio}</p>
+          <p className="text-xs lg:text-sm text-black/60">
+            {photo.author.bio}
+          </p>
         </div>
         <div className="mt-6">
           <div className="flex items-stretch gap-3">
@@ -71,8 +78,7 @@ const PhotoDetails = async ({ id, lang }) => {
                 src="/heart.svg"
                 className="w-5 h-5"
                 width={50}
-                height={50}
-              />
+                height={50} />
               {photo.likes}
             </button>
             <button className="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
@@ -80,8 +86,7 @@ const PhotoDetails = async ({ id, lang }) => {
                 src="/save.svg"
                 className="w-5 h-5"
                 width={50}
-                height={50}
-              />
+                height={50} />
               {dictionary.save}
             </button>
             <button className="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
@@ -89,8 +94,7 @@ const PhotoDetails = async ({ id, lang }) => {
                 src="/share.svg"
                 className="w-5 h-5"
                 width={50}
-                height={50}
-              />
+                height={50} />
               {dictionary.share}
             </button>
           </div>
