@@ -1,4 +1,4 @@
-export default function Menu() {
+export default async function Menu() {
   return (
     <ul className="flex items-center space-x-4">
       <li>
@@ -14,13 +14,8 @@ export default function Menu() {
         <a href="#">Blogs</a>
       </li>
       <li>
-        <a href="#" className="font-bold">
-          #OpenToWork
-        </a>
-      </li>
-      <li>
         <a href="#" className="btn-download">
-          DownloadCV
+          Download CV
         </a>
       </li>
     </ul>

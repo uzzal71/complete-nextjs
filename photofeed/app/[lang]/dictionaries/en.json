@@ -1,8 +1,13 @@
 {
-    "views": "Views",
-    "share": "Share",
-    "uploadedOn": "Uploaded On",
-    "save": "Save",
-    "followers": "Followers",
-    "follow": "Follow"
-  }
+  "views": "Views",
+  "share": "Share",
+  "uploadedOn": "Uploaded On",
+  "save": "Save",
+  "followers": "Followers",
+  "follow": "Follow",
+  "home": "Home",
+  "about_me": "About Me",
+  "projects": "Projects",
+  "blogs": "Blogs",
+  "download_cv": "Download CV"
+}
