@@ -2,6 +2,7 @@ import getJoke from "@/utils/getJoke";
 import RandJoke from "./components/RandomJoke";
 
 export default async function Home() {
+  // get api call
   const joke = await getJoke();
 
   return (
