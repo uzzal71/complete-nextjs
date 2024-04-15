@@ -1,8 +1,8 @@
-// import getJoke from "@/utils/getJoke";
+import getJoke from "@/utils/getJoke";
 import RandJoke from "./components/RandomJoke";
 
 export default async function Home() {
-  // const joke = await getJoke();
+  const joke = await getJoke();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 gap-5">
