@@ -2,7 +2,7 @@ import getJoke from "@/utils/getJoke";
 import RandJoke from "./components/RandomJoke";
 
 // Global level cache
-// export const revalidate = 10;
+export const revalidate = 10;
 
 export default async function Home() {
   const joke = await getJoke();
