@@ -4,4 +4,6 @@ export default async function getJoke() {
   if (!res.ok) {
     throw new Error("Fetch error...");
   }
+
+  return res.json();
 }
