@@ -1,1 +1,3 @@
-export default async function getJoke() {}
+export default async function getJoke() {
+  const res = await fetch("https://api.chucknorris.io/jokes/random");
+}
