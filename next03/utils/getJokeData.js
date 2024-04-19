@@ -7,6 +7,5 @@ export default async function getJoke() {
     throw new Error("Fetch error...");
   }
 
-  // return data
   return res.json();
 }
