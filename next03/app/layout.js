@@ -6,6 +6,7 @@ export const metadata = {
   description: "Patterns and Best Practices",
 };
 
+// Main Layout
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
