@@ -1,5 +1,5 @@
-function page() {
-  return <div>page</div>;
-}
+const WindPage = () => {
+  return <div>WindPage</div>;
+};
 
-export default page;
+export default WindPage;

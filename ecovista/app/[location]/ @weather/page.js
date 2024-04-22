@@ -1,5 +1,5 @@
-function page() {
-  return <div>page</div>;
-}
+const WeatherPage = () => {
+  return <div>WeatherPage</div>;
+};
 
-export default page;
+export default WeatherPage;
