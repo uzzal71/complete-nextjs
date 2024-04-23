@@ -1,6 +1,6 @@
 import { getCatFacts } from "@/apis/apis";
 
-export default async function StaticPage() {
+export default async function DynamicPage() {
   const catFacts = await getCatFacts("dynamic");
 
   return (
