@@ -1,3 +1,5 @@
+"use client";
+
 function LocationDetector() {
   return <div>LocationDetector</div>;
 }
