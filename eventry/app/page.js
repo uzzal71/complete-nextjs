@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="flex">
       <h1>Welcome envntry</h1>
     </div>
   );
